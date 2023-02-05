@@ -1,4 +1,4 @@
-### Lab 2 Explaination ###
+### Lab 2 Explanation ###
 
 In this lab, polynomials are represented using lists of coefficients. The word “representation” here
 means approximately “way of storing in a computer”. Concretely, we will represent a polynomial like
@@ -38,3 +38,27 @@ written xˆ2.
 
 
 ## Task 3 ##
+
+drop_zeroes:
+• Removes all zeros at the end of a polynomial and returns the result.
+
+eq_poly:
+• Tests when two polynomials are equal by ignoring all zeroes at the end and then
+comparing the rest for equality.
+
+
+## Task 4 ##
+
+eval_poly:
+• Takes a polynomial and a value in a variable x and returns the polynomials value at the point x.
+
+
+## Task 5 ##
+neg_poly:
+• Defines negation of polynomials (that is, flip the sign of all coefficients and return the result).
+
+add_poly:
+• Defines addition of polynomials (that is, add the coefficients and return the result).
+
+sub_poly:
+• Defines subtraction of polynomials.
