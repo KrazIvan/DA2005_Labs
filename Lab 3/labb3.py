@@ -80,7 +80,7 @@ def annotate(f):
     lines = -1
     words = 0
     with open(f,"r") as text:
-        with open("annotated_infile.txt", "w") as w:
+        with open(f"annotated_{f}.txt", "w") as w:
             for line in text:
                 lines += 1
                 words += len(line.split())
