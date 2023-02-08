@@ -80,7 +80,8 @@ def annotate(f):
     lines = -1
     words = 0
     with open(f,"r") as text:
-        with open(f"annotated_{f}.txt", "w") as w:
+        filename, ext = f.rsplit(".", 1)
+        with open(f"annotated_{filename}.txt", "w") as w:
             for line in text:
                 lines += 1
                 words += len(line.split())
@@ -89,7 +90,7 @@ def annotate(f):
 # -------------Testing area--------------------------------------------------------------
 # Uncomment (and edit) below to test.
 
-#annotate("infile.txt")   #<---- You need to have a txt file with the same name as the string here, in the same folder as this py file, in order for this function to work.
+annotate("infile.txt")   #<---- You need to have a txt file with the same name as the string here, in the same folder as this py file, in order for this function to work.
 
 # ---------------------------------------------------------------------------
 
