@@ -124,9 +124,9 @@ def batch_average_printer(data):
     Output: Prints the batch and the avarage.
 
     '''
-    batch_average = batch_average_calculator(data)
+    batch_averages_dict = batch_average_calculator(data)
     print("Batch\t Average")
-    for batch, average in batch_average.items(): 
+    for batch, average in batch_averages_dict.items(): 
         print(batch, "\t", average)
 
 
