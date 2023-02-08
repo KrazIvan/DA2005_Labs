@@ -22,6 +22,8 @@ def poly_to_string(p_list):
             terms.append("-x")
         elif coeff == 1 and degree > 1:
             terms.append("x^" + str(degree))
+        elif coeff == -1 and degree > 1:
+            terms.append("-x^" + str(degree))
         elif degree == 0:
             terms.append(str(coeff))
         elif degree == 1:
@@ -128,7 +130,7 @@ k = 10
 #print(eval_poly(q, -2))
 #print(eval_poly(p, True))
 #print(eval_poly(p, False))
-print(eval_poly(j, k))
+#print(eval_poly(j, k))
 # ---------------------------------------------------------------------------
 
 # END OF TASK 4
@@ -188,7 +190,7 @@ def neg_poly(p_list): # Returns the negated version of the original list.
     terms = []
 
     for coeff in p_list:
-        terms.append(coeff-coeff*2)
+        terms.append(-coeff)
 
     return terms
 
