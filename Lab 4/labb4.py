@@ -89,9 +89,51 @@ def data_collector(filename):
     data = dict(sorted(data.items())) # Sorts the data in order by batch.
     return data
 
+
+def batch_average_calculator(data):
+    '''
+    Function for calculating the batch average of the data.
+
+    Parameter: Dictionary with data from an experiment.
+
+    Output: Returns a dictionary with the batch number as a key and 
+    the average as a value.
+
+    '''
+    result = {}
+    for batch, sample in data.items(): 
+        n = 0
+        x_sum = 0
+        for (x, y, val) in sample:
+            if x**2 + y**2 <= 1:
+                x_sum += val
+                n += 1
+        if not n == 0:
+            average = x_sum/n
+            result[batch] = average
+    return result
+
+
 def batch_average_printer(data):
     '''
-    Function for printing out the batch and average of the data.
+    Function for printing out the batch and average of the data,
+    using batch_average_calculator().
+
+    Parameter: Dictionary with data from an experiment.
+
+    Output: Prints the batch and the avarage.
+
+    '''
+    batch_average = batch_average_calculator(data)
+    print("Batch\t Average")
+    for batch, average in batch_average.items(): 
+        print(batch, "\t", average)
+
+
+def batch_average_printer_og(data):
+    '''
+    Function for calucating and printing out the batch
+    and average of the data.
 
     Parameter: Dictionary with data from an experiment.
 
