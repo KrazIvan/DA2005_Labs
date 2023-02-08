@@ -119,10 +119,10 @@ def eval_poly(p, x):
 # -------------Testing area--------------------------------------------------------------
 # Uncomment (and edit) below to run tests.
 
-p = [2, 0, 1]
-q = [-2, 1, 0, 0, 1]
-j = [-5, -5, 0, -2, 0, 0, 6]
-k = 10
+#p = [2, 0, 1]
+#q = [-2, 1, 0, 0, 1]
+#j = [-5, -5, 0, -2, 0, 0, 6]
+#k = 10
 #print(eval_poly(p, 0))
 #print(eval_poly(p, 1))
 #print(eval_poly(p, 2))
