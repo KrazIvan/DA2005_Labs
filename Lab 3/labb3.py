@@ -98,7 +98,7 @@ annotate("infile.txt")   #<---- You need to have a txt file with the same name a
 # START OF TASK 4
 
 
-def find_matching_lines(h,s):
+def og_find_matching_lines(h,s):
     theList = []
     lines = -1
     with open(h,"r") as text:
@@ -108,17 +108,31 @@ def find_matching_lines(h,s):
                 theList.append((lines, line))
         return theList
 
+def find_matching_lines(h, s):
+    theList = []
+    lines = -1
+    for line in h:
+        lines += 1
+        if s in line:
+            theList.append((lines, line))
+    return theList
+
 # -------------Testing area--------------------------------------------------------------
 # Uncomment (and edit) below to run tests.
 
 #h = "infile.txt"    #<---- You need to have a txt file with the same name as this string, in the same folder as this py file, in order for this function to work.
 #s = "face"     #<---- Custom, write the string you want to find here. Or just print the ones below to run the sample tests.
 
-#print(find_matching_lines(h,s))
+#print(og_find_matching_lines(h,s))
 
-#print(find_matching_lines(h,"the mob"))
-#print(find_matching_lines(h,"the"))
-#print(find_matching_lines(h,"sommar"))
+#print(og_find_matching_lines(h,"the mob"))
+#print(og_find_matching_lines(h,"the"))
+#print(og_find_matching_lines(h,"sommar"))
+
+#with open("infile.txt", "r") as infile:
+#    print(find_matching_lines(infile, "the mob"))
+#    print(find_matching_lines(infile, "the"))
+#    print(find_matching_lines(infile, "sommar"))
 
 # ---------------------------------------------------------------------------
 
@@ -160,7 +174,7 @@ def find_lines():
 # -------------Testing area--------------------------------------------------------------
 # Uncomment below to test.
 
-print(find_lines())
+#print(find_lines())
 
 # ---------------------------------------------------------------------------
 
