@@ -90,7 +90,7 @@ def annotate(f):
 # -------------Testing area--------------------------------------------------------------
 # Uncomment (and edit) below to test.
 
-annotate("infile.txt")   #<---- You need to have a txt file with the same name as the string here, in the same folder as this py file, in order for this function to work.
+#annotate("infile.txt")   #<---- You need to have a txt file with the same name as the string here, in the same folder as this py file, in order for this function to work.
 
 # ---------------------------------------------------------------------------
 
