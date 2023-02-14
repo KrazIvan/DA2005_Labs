@@ -34,7 +34,7 @@ with the contents of the lists filled in. Using poly_to_string. You should get t
 
 
 ## Task 2 ##
-In poly_to_string:
+In *poly_to_string*:
     • An empty list is converted to 0.
     • Terms with coefficent 1 are written without a coefficient. For example, 1xˆ2 should instead be
     written xˆ2.
@@ -45,27 +45,27 @@ In poly_to_string:
 
 ## Task 3 ##
 
-drop_zeroes:
+*drop_zeroes*:
     • Removes all zeros at the end of a polynomial and returns the result.
 
-eq_poly:
+*eq_poly*:
     • Tests when two polynomials are equal by ignoring all zeroes at the end and then comparing the rest for equality.
 
 
 ## Task 4 ##
 
-eval_poly:
+*eval_poly*:
     • Takes a polynomial and a value in a variable x and returns the polynomials value at the point x.
 
 
 ## Task 5 ##
-neg_poly:
+*neg_poly*:
     • Defines negation of polynomials (that is, flip the sign of all coefficients and return the result).
 
-add_poly:
+*add_poly*:
     • Defines addition of polynomials (that is, add the coefficients and return the result).
 
-sub_poly:
+*sub_poly*:
     • Defines subtraction of polynomials.
 
 
@@ -104,29 +104,29 @@ can be written in the following way as a dictionary:
     
     {(0, 0): 1, (0, 3): 2, (1, 1): 8, (2, 3): 5}
 
-matrix_to_sparse:
+*matrix_to_sparse*:
     • Takes in a matrix represented as a list of lists and produces a dictionary as above.
 
 
 ## Task 3: file handling ##
 
-annotate:
+*annotate*:
     • Takes a filename f as a parameter and writes to a new file annotated_f so that each line in annotated_f contains the original line in f followed by the row number (counting from 0) and total number of words up to and including that row.
 
 ## Task 4: searching for strings in files ##
 
-find_matching_lines:
+*find_matching_lines*:
     • Takes a file handle h and a string s. The function should return, in the form of a list of tuples, both the row number (counting from 0) and the contents of each row that contains the string.
 
-find_lines:
+*find_lines*:
     • Asks the user for a file and string and uses the function find_matching_lines to print out the rows where the string was found.
 
 
 ## Task 5: searching by position in files ##
-save_rows:
+*save_rows*:
     • Takes a file handle h and saves the line numbers as keys and lines themselves as values in a dictionary. The function should return the dictionary.
 
-lookup:
+*lookup*:
     • Takes in a dictionary d from numbers to strings as above as well as two coordinates (r,c) which correspond to a row and column in d and returns the character at the position corresponding to the coordinates.
 
 The idea is that lookup will be used together with save_rows (see part c)) and each character in the file
@@ -172,7 +172,7 @@ Note that the last measurement is outside the unit circle.
 
 
 
-*plot_data(data,f)*: This function should plot the data stored in the argument data using matplotlib. It should not filter out points outside the unit circle, but you should plot the circle itself along with the points. Does not need to plot any averages. The plotted data should then be saved as a PDF in a file f.pdf (where f is the second parameter to plot_data). The function plot_data should then be called in the main program after the averages have been printed.
+**plot_data(data,f)**: This function should plot the data stored in the argument data using matplotlib. It should not filter out points outside the unit circle, but you should plot the circle itself along with the points. Does not need to plot any averages. The plotted data should then be saved as a PDF in a file f.pdf (where f is the second parameter to plot_data). The function plot_data should then be called in the main program after the averages have been printed.
 
 
 
