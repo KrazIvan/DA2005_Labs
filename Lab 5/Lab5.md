@@ -1,4 +1,4 @@
-### Lab 5 Explanation ###
+# Lab 5 Explanation #
 
 This lab takes a look at a computational problem from modern molecular biology. In DNA sequence analysis, we sometimes want to know how much overlap there is between two sequences (simplified: how much DNA they have in common). This lab support such an analysis with object-oriented code.
 
