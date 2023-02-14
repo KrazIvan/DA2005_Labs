@@ -84,15 +84,16 @@ one at a time and add each card to a new sorted deck of cards in the correct pos
 We can divide up the insertion sort algorithm into two subproblems:
 
     insert_in_sorted:
-        • Inserts an element x in an already sorted list sorted_list in an appropriate position so that the list remains sorted.
+        # Inserts an element x in an already sorted list sorted_list in an appropriate position so that the list remains sorted.
 
     insertion_sort:
-        • Insertion sort with the help of insert_in_sorted.
+        # Insertion sort with the help of insert_in_sorted.
 
 
 ## Task 2: sparse matrices ##
 We can represent a matrix in Python as a list whose elements are lists of numbers all of the same length.
-    For example: [[1, 0, 0, 2], [0, 8, 0, 0], [0, 0, 0, 5]].
+    For example: 
+        [[1, 0, 0, 2], [0, 8, 0, 0], [0, 0, 0, 5]].
 
 A matrix is called sparse if most of its entries are 0. If we represent such a matrix as a list of lists, we
 could unnecessarily use up a lot of the computer’s memory, especially if the matrix is very big—imagine
