@@ -7,8 +7,8 @@ This lab contains an interactive temperature converter.
 
 In this lab, polynomials are represented using lists of coefficients. The word “representation” here
 means approximately “way of storing in a computer”. Concretely, we will represent a polynomial like
-1+3x+7x^2 in Python as the list [1,3,7]. In general, we will store the coefficient of degree n in the list’s
-nth entry.
+*1+3x+7x^2* in Python as the list *[1,3,7]*. In general, we will store the coefficient of degree *n* in the list’s
+*n*th entry.
 
 
 ## Task 1 ##
