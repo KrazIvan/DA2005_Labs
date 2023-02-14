@@ -20,13 +20,17 @@ Suppose that the polynomials p and q are defined as below:
 
 The function stores list representations for these two polynomials in the variables p and q. That
 is, write
-p = [...]
-q = [...]
+    
+    p = [...]
+    q = [...]
+
 with the contents of the lists filled in. Using poly_to_string. You should get the following:
-#>>> poly_to_string(p)
-'2 + 0x + 1x^2'
-#>>> poly_to_string(q)
-'-2 + 1x + 0x^2 + 0x^3 + 1x^4'.
+    
+    #>>> poly_to_string(p)
+    '2 + 0x + 1x^2'
+
+    #>>> poly_to_string(q)
+    '-2 + 1x + 0x^2 + 0x^3 + 1x^4'.
 
 
 ## Task 2 ##
