@@ -23,9 +23,9 @@ is, write
 p = [...]
 q = [...]
 with the contents of the lists filled in. Using poly_to_string. You should get the following:
->>> poly_to_string(p)
+#>>> poly_to_string(p)
 '2 + 0x + 1x^2'
->>> poly_to_string(q)
+#>>> poly_to_string(q)
 '-2 + 1x + 0x^2 + 0x^3 + 1x^4'.
 
 
